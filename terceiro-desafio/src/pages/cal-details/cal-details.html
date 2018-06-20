@@ -1,0 +1,22 @@
+<ion-header>
+ 
+  <ion-navbar color="primary">
+    <ion-title>{{ calName }}</ion-title>
+  </ion-navbar>
+ 
+</ion-header>
+ 
+ 
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let ev of events">
+      <ion-grid>
+        <ion-row justify-space-between>
+          <ion-col col-10>
+            <h4><strong>Evento : </strong> {{ev.title}}</h4>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>

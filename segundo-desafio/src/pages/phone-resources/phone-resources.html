@@ -1,0 +1,44 @@
+<!--
+  Generated template for the PhoneResourcesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Informações do dispositivo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+          <h4><strong>Identificador: </strong> {{uuid}}</h4>
+        </ion-item>
+        <ion-item>
+          <h4><strong>Cordova: </strong> {{cordova}}</h4>
+        </ion-item>
+        <ion-item>
+          <h4><strong>Modelo: </strong> {{modelo}}</h4>
+        </ion-item>
+        <ion-item>
+          <h4><strong>Plataforma: </strong> {{plataforma}}</h4>
+        </ion-item>
+        <ion-item>
+          <h4><strong>Versão: </strong> {{versao}}</h4>
+        </ion-item>
+        <ion-item>
+          <h4><strong>Fabricante: </strong> {{fabricante}}</h4>
+        </ion-item>
+        <ion-item>
+          <h4><strong>Virtualizado: </strong> {{virtualizado}}</h4>
+        </ion-item>
+        <ion-item>
+          <h4><strong>Serial: </strong> {{serial}}</h4>
+        </ion-item>
+      </ion-list>    
+</ion-content>

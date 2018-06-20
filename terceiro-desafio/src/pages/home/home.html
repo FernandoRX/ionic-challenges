@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Agendas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+ 
+  <ion-list>
+    <ion-item *ngFor="let cal of calendars">
+      {{ cal.name }}
+      <p><button ion-button (click)="openCal(cal)">
+        Eventos
+      </button> 
+      <button ion-button (click)="addEvent(cal)">
+        Adicionar
+      </button>
+    </p>
+    </ion-item>
+  </ion-list>
+</ion-content>

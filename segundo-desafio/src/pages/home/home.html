@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <h4><strong>Quantidade de bateria: </strong></h4>
+    </ion-item>
+  <ion-item [ngStyle]="{'color': color}">
+    <h1>{{batteryQuantity}}%</h1>
+  </ion-item>
+  <ion-item>
+    <h4><strong>Está carregando : </strong> {{isPlugged}}</h4>
+  </ion-item>
+  <ion-item>
+      <h4><strong>Ultima verificação : </strong> {{checkTime}}</h4>
+  </ion-item>
+
+</ion-content>
